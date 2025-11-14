@@ -1,34 +1,18 @@
-# Pharmaceutical-Sales-Data-Analysis
+# Healthcare-Sales-Analysis
 
 ## **Project Overview**
 
-This project presents an end-to-end **Pharmaceutical Sales Analysis** using **Power BI**, starting from data cleaning, transformation, data modeling, DAX calculations, and interactive visualizations. The goal is to uncover actionable insights on sales trends, customer segments, product performance, and regional distribution.
+This project presents an end-to-end **Healthcare Sales Analysis** using **Power BI**, starting from data cleaning, transformation, data modeling, DAX calculations, and interactive visualizations. The goal is to uncover actionable insights on sales trends, customer segments, product performance, and regional distribution.
 
-Dataset Source: Public pharma sales dataset
-Dataset Link: *(Replace with your dataset URL if needed)*
-[https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi?tab=readme-ov-file#dataset](https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi?tab=readme-ov-file#dataset)
 
----
+## **Dataset Used**
 
-## **👤 Author**
+pharma-data.csv - Contains Distributor, Customer, Product Details, Sales, Pricing, Channel, Geography, and Team Information.
 
-**Name:** Arockiaselvi A
-**Batch:** DA-TN-FNB01
-**Email:** [arocckia1897@gmail.com](mailto:arocckia1897@gmail.com)
-**Contact:** 9894649708
 
----
+## **Data Cleaning & Transformation (Power Query Editor)**
 
-## **📂 Dataset Used**
-
-* pharma-data.csv
-  Contains Distributor, Customer, Product Details, Sales, Pricing, Channel, Geography, and Team Information.
-
----
-
-## **🧹 Data Cleaning & Transformation (Power Query Editor)**
-
-### ✔ Steps Performed
+### Steps Performed
 
 1. Imported dataset into Power BI.
 2. Transformed the table in **Power Query Editor**.
@@ -59,11 +43,10 @@ Dataset Link: *(Replace with your dataset URL if needed)*
 
 12. Applied all transformations and loaded data into Power BI.
 
----
 
-## **🧮 DAX Calculations**
+## **DAX Calculations**
 
-### **🔹 Calculated Columns**
+### **Calculated Columns**
 
 * **Channel Type**
   `Channel Type = 'Pharma Sales Data'[Channel] & " " & 'Pharma Sales Data'[Sub-channel]`
@@ -71,7 +54,7 @@ Dataset Link: *(Replace with your dataset URL if needed)*
 * **Sales Team Details**
   *(Summarize sales performance by team, manager, rep)*
 
-### **🔹 Measures**
+### **Measures**
 
 * Total Number of Sales
   `Total Number of Sales = COUNTROWS('Pharma Sales Data')`
@@ -82,71 +65,59 @@ Dataset Link: *(Replace with your dataset URL if needed)*
 * Total Sales Amount
   `Total Sales Amount = SUM('Sales Details by Country'[Sales Amount])`
 
-### **🔹 Calculated Tables**
+### **Calculated Tables**
 
 * **Sales Details by Country**
   Using `SUMMARIZECOLUMNS()` for Distributor, Customer, City, Country, Sales Amount, Reference ID.
 
----
 
-## **📊 Data Modeling**
+## **Data Modeling**
 
 * Cleaned and optimized relationships.
 * Ensured proper data types and summarization settings.
 * Used star-schema-style modeling for efficient reporting.
 
----
 
-## **📈 Visualizations Created**
+## **Visualizations Created**
 
-### **1️⃣ Sales by Year & Channel (Clustered Column Chart)**
+### **1. Sales by Year & Channel (Clustered Column Chart)**
 
 Shows yearly comparison between **Hospital** and **Pharmacy** sales.
 
-### **2️⃣ Sales by Country (Map Visual)**
+### **2. Sales by Country (Map Visual)**
 
 Identifies regional sales distribution using bubble size.
 
-### **3️⃣ Sales by Month & Year (Area Chart)**
+### **3. Sales by Month & Year (Area Chart)**
 
 Highlights overall monthly trends over multiple years.
 
-### **4️⃣ Sales by Sub-Channel (Donut Chart)**
+### **4️. Sales by Sub-Channel (Donut Chart)**
 
 Breakdown of sales by sub-channel segments.
 
-### **5️⃣ Sales by Sales Team & Product Class (100% Stacked Bar Chart)**
+### **5️. Sales by Sales Team & Product Class (100% Stacked Bar Chart)**
 
 Compares how teams perform across product categories.
 
-### **6️⃣ Sales by Managers (Funnel Chart)**
+### **6️. Sales by Managers (Funnel Chart)**
 
 Shows top contributing managers.
 
-### **7️⃣ KPI Cards**
+### **7️. KPI Cards**
 
 * Total Sales Amount
 * Total Number of Sales
 
-### **8️⃣ Slicers**
+### **8️. Slicers**
 
 * Country
 * Distributor
 * Product Class
   All visuals update dynamically for interactive analysis.
 
----
 
-## **📘 Report**
-
-**Title:** Healthcare Sales Insights
-Full Power BI Report (PDF View):
-*(Replace with your link if needed)*
-[https://drive.google.com/file/d/1AI8yGWRCzNLtSVFHVyCnovUE6fHtRDLD/view?usp=sharing](https://drive.google.com/file/d/1AI8yGWRCzNLtSVFHVyCnovUE6fHtRDLD/view?usp=sharing)
-
----
-
-## **📌 Key Insights**
+## **Key Insights**
 
 * Identified high-performing product classes and regions.
 * Segmented customers into Premium, Regular, and New.
@@ -154,38 +125,9 @@ Full Power BI Report (PDF View):
 * Monthly & yearly trends revealed seasonal patterns.
 * Aggregated distributor-level customer purchases for deeper analysis.
 
----
-
-## **🚀 Tools Used**
+## **Tools Used**
 
 * **Power BI Desktop**
 * **Power Query Editor**
 * **DAX (Data Analysis Expressions)**
 * **Excel** (for initial verification)
-
----
-
-## **📁 Project Structure**
-
-```
-📦 Healthcare-Sales-Analysis
- ┣ 📄 README.md
- ┣ 📊 PowerBI_Report.pbix
- ┣ 📁 Data
- ┃ ┗ pharma-data.csv
- ┗ 📄 Project_Documentation.pdf (optional)
-```
-
----
-
-## **⭐ If you like this project**
-
-Please ⭐ the repository and share your feedback!
-
----
-
-If you'd like, I can also create:
-✅ **Short version of README**
-✅ **Professional project description for LinkedIn**
-✅ **GitHub repository structure + cover image**
-
